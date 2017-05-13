@@ -1,5 +1,5 @@
 # Domicilios Test
-Aplicación de comentarios hecha con React, ES6, Sass, Webpack y Express
+Aplicación de comentarios hecha con React, ES6, Sass, Webpack y Express. 
 
 ### Instalación
 
@@ -24,3 +24,6 @@ Iniciar el servidor normalmente
 ```sh
 $ npm star
 ```
+
+### Vista previa
+[Domicilios Test](https://comments-ap.herokuapp.com/) en Heroku
