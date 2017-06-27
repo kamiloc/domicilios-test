@@ -12,17 +12,17 @@ $ git clone https://github.com/kamiloc/domicilios-test.git
 $ cd domicilios-test
 $ npm install -d
 ```
-Iniciar el servidor para desarrollo
+Iniciar el servidor para desarrollo:
 
 ```sh
 $ npm test
 ```
 
 
-Iniciar el servidor normalmente
+Construir el proyecto para producción y ejecutar el servidor:
 
 ```sh
-$ npm star
+$ npm start
 ```
 
 ### Vista previa
