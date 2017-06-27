@@ -1,5 +1,7 @@
 'use strict';
 
+const webpack = require('webpack');
+
 module.exports = {
 
     entry: __dirname + '/src/js/main.jsx',
@@ -29,8 +31,17 @@ module.exports = {
             }
         ]
     },
-    
+
     resolve: {
         extensions: ['.js', '.jsx', '.json']
-    }
+    },
+
+    plugins: [
+        new webpack.DefinePlugin({
+            'process.env': {
+                NODE_ENV: JSON.stringify('production')
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin()
+    ]
 };
