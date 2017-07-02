@@ -1,2 +1,4 @@
 language: node_js
-sudo: enabled
+cache:
+  directories:
+    - "node_modules"
