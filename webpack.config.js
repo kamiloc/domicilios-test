@@ -1,8 +1,17 @@
-'use strict';
+//'use strict';
 
 const webpack = require('webpack');
+const plugins = [];
+const TRAVIS = process.env.TRAVIS ? JSON.parse(process.env.TRAVIS) : false;
+
+if (TRAVIS) {
+  console.log('TRAVIS mode (will fail on error)');
+  plugins.push(new webpack.NoErrorsPlugin());
+}
+
 
 module.exports = {
+    bail: TRAVIS,
 
     entry: __dirname + '/src/js/main.jsx',
 
