@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "webpack -w & nodemon server",
-    "start": "webpack -p & node server"
+    "start": "webpack -p & node server",
+    "test": "webpack -w & nodemon server"
   },
   "keywords": [],
   "author": "",
