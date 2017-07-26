@@ -26,4 +26,4 @@ $ npm start
 ```
 
 ### Vista previa
-[Domicilios Test](https://comments-ap.herokuapp.com/) en Heroku
+[Domicilios Test](https://comments-ap.herokuapp.com/domicilios-test/) en Heroku
