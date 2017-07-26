@@ -72,7 +72,7 @@ export default class Post extends React.Component {
                 let newComment = new commentClass();
                 newComment.content = textArea.value;
                 newComment.date = Date.now();
-                newComment.user = { name: 'Camilo', profilePicture: '../img/user.png' }
+                newComment.user = { name: 'Camilo', profilePicture: 'img/user.png' }
 
                 this.props.post.comments.push(newComment); /*Add the comment at the post*/
                 ReactDOM.render(<Container />, document.getElementById('container-div')); /*Re-render the Container Component*/
@@ -153,9 +153,9 @@ export default class Post extends React.Component {
 
                         <div id="actions">
                             <div id="reactions" hidden={this.state.viewReactOption} className="animated bounceInLeft">
-                                <img src="../img/blue.png" alt="Blue reaction" onClick={this.handleBlueReact.bind(this)} />
-                                <img src="../img/red.png" alt="Red reaction" onClick={this.handleRedReact.bind(this)} />
-                                <img src="../img/yellow.png" alt="Yellow reaction" onClick={this.handleYellowReact.bind(this)} />
+                                <img src="img/blue.png" alt="Blue reaction" onClick={this.handleBlueReact.bind(this)} />
+                                <img src="img/red.png" alt="Red reaction" onClick={this.handleRedReact.bind(this)} />
+                                <img src="img/yellow.png" alt="Yellow reaction" onClick={this.handleYellowReact.bind(this)} />
                             </div>
 
                             <p onClick={this.handleShowReactiOption.bind(this)}>Reaccionar</p>
@@ -165,18 +165,18 @@ export default class Post extends React.Component {
                 </div>
 
                 <div id="post-info">
-                    <img src="../img/blue.png" alt="Blue reaction" hidden={!this.reactions.blue} />
-                    <img src="../img/red.png" alt="Red reaction" hidden={!this.reactions.red} />
-                    <img src="../img/yellow.png" alt="Yellow reaction" hidden={!this.reactions.yellow} />
+                    <img src="img/blue.png" alt="Blue reaction" hidden={!this.reactions.blue} />
+                    <img src="img/red.png" alt="Red reaction" hidden={!this.reactions.red} />
+                    <img src="img/yellow.png" alt="Yellow reaction" hidden={!this.reactions.yellow} />
                     <p id="reacts-counter">{Post.reactions.length > 0 ? Post.reactions.length : ''}</p>
                     <p>{Post.comments.length > 0 ? Post.comments.length + ' comentarios' : ''}</p>
                 </div>
 
                 <div id="actions-movile">
                     <div id="reactions" hidden={this.state.viewReactOption} className="animated bounceInLeft">
-                        <img src="../img/blue.png" alt="Blue reaction" onClick={this.handleBlueReact.bind(this)} />
-                        <img src="../img/red.png" alt="Red reaction" onClick={this.handleRedReact.bind(this)} />
-                        <img src="../img/yellow.png" alt="Yellow reaction" onClick={this.handleYellowReact.bind(this)} />
+                        <img src="img/blue.png" alt="Blue reaction" onClick={this.handleBlueReact.bind(this)} />
+                        <img src="img/red.png" alt="Red reaction" onClick={this.handleRedReact.bind(this)} />
+                        <img src="img/yellow.png" alt="Yellow reaction" onClick={this.handleYellowReact.bind(this)} />
                     </div>
 
                     <p onClick={this.handleShowReactiOption.bind(this)} style={{borderRight: '1px solid lightgrey'}}>Reaccionar</p>

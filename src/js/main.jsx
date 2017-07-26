@@ -12,7 +12,7 @@ import Home from './views/Home';
 ReactDOM.render(
     <Router>
         <div>
-            <Route exact path="/" component={Home} />
+            <Route exact path="/domicilios-test/" component={Home} />
         </div>
     </Router>,
     document.getElementById('root')

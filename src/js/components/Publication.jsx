@@ -35,7 +35,7 @@ export default class Publication extends React.Component {
             let User = new userClass();
             User.name = 'Camilo';
             User.lastName = 'Cortes';
-            User.profilePicture = '../img/user.png';
+            User.profilePicture = 'img/user.png';
 
             /*Add the new User and new Post for the data*/
             Users.push(User);
